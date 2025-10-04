@@ -1,0 +1,67 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+    	"source": "~/Pictures/wallpapers/big_bunny.png",
+    	"type": "kitty",
+    	"height": 10,
+    	"padding": {
+    		"top": 2,
+            "left": 4,
+    	}
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+	"break",
+	"break",
+{
+            "type": "custom",
+            "format": "\u001b[35m𝚑𝚊𝚒 𝚑𝚊𝚒𝚒 :𝚙\u001b[0m\n"
+        },
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "34",  // = color4
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "34",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " ",
+            "keyColor": "34",  
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "34", 
+            "format": "fish 4.1.0"
+        },
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "34", 
+        },
+        {
+            "type": "terminalfont",
+            "key": " ",
+            "keyColor": "34", 
+        },
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "34", 
+        },
+        {
+            // Slim dash bars
+            "type": "custom",
+            "format": "\u001b[90m▃▃▃  \u001b[31m▃▃▃  \u001b[32m▃▃▃  \u001b[33m▃▃▃  \u001b[34m▃▃▃  \u001b[35m▃▃▃  \u001b[36m▃▃▃  \u001b[37m▃▃▃ "
+        },
+        "break",
+        "break",
+    ]
+}
