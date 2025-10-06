@@ -1,0 +1,85 @@
+* {
+    font-family: "Maple Mono";
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+    color: #ebdbb2;
+}
+
+/* Left-most: CPU */
+#cpu,
+#memory,
+#workspaces,
+#window, 
+#clock, 
+#pulseaudio,
+#tray {
+    padding: 12px;
+    margin-left: 6px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 3px solid #1d2021;
+    box-shadow: #1d2021 2px 2px 4px;
+}
+
+#cpu {
+    background: #cc241d;
+}
+
+#memory {
+    background: #d65d0e;
+}
+
+#workspaces {
+    background: #458588;
+    color: #ebdbb2;
+}
+
+#workspaces button {
+    color: #ebdbb2;
+}
+
+#workspaces button.active {
+    background: #83a598;
+}
+
+
+/* Active window title */
+#window {
+    background: #b5346a; 
+}
+
+/* Right-most: Clock */
+#clock {
+    background: #458588;
+}
+
+#tray {
+    background: #d65d0e;
+}
+
+#pulseaudio {
+    background: #cc241d;
+    margin-right: 6px;
+}
+
+/* Tooltips */
+tooltip {
+    border-radius: 12px;
+    background-color: #0f1117;
+    color: #c0c0c0;
+    padding: 4px 8px;
+}
+
+/* All system info modules */
+#backlight,
+#custom-notification {
+    background: rgba(40, 40, 40, 0);
+    font-weight: 800;
+    color: #c0c0c0;
+    border-radius: 0px;
+    padding: 4px 10px;
+}

@@ -1,0 +1,59 @@
+{
+
+  // Cpu
+  "cpu": {
+    "interval": 1,
+    "states": {
+        "low": 0,
+        "med": 20,
+        "high": 60,
+    },
+    "format": "\ue266  {usage}%",
+  },
+
+  // Memory
+  "memory": {
+    "format": "\uefc5  {}%",
+  },
+
+  "niri/workspaces": {
+      "format": "{}",
+  },
+
+  // Network
+  "network": {
+    "interval": 1,
+    "format": "\udb80\uddda {bandwidthDownBytes}  \udb81\udd52 {bandwidthUpBytes}",
+  },
+
+  // Tray
+  "tray": {
+      "icon-size": 16,
+      "spacing": 8,
+  },
+
+  // niri Window
+  "niri/window": {
+    "icon": true,
+    "format": "{}",
+    "rewrite": {
+		"(.*) — Waterfox": "$1",
+		"(.*) - fish": "$1",
+		"(.*) - nvim": "vimming it",
+		"(.*) - Discord": "$1",
+	},
+  },
+
+  // Clock
+  "clock": {
+    "format": "{:%I:%M %a %D}",
+    "tooltip": false
+  },
+
+  // Pulseaudio
+  "pulseaudio": {
+    "format": "\uf028  {volume}%",
+    "format-muted": " ",
+    "on-click": "pavucontrol"
+  },
+}
