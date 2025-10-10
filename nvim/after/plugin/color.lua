@@ -1,13 +1,8 @@
 vim.o.background = 'dark'
 
-require('gruvbox').setup(
+require('rose-pine').setup(
 {
-    overrides = {
-	-- Change color for functions
-        ["@lsp.type.function"] = { fg = "#ff7011" },
-    },
-    transparent_mode = "true",
-    contrast = "hard"
+    variant = "moon"
 })
 
-vim.cmd('colorscheme gruvbox')
+vim.cmd('colorscheme rose-pine')

@@ -1,4 +1,4 @@
-@import '/home/emc/.config/wofi/gruvbox.css';
+@import '/home/emc/.config/wofi/rose-pine-moon.css';
 
 * {
     font-family: 'Maple Mono';
@@ -57,16 +57,16 @@
     color: @txt;
  }
 
-/* Selected Entry */
-#entry:selected {
-   background-color: @bg;
-   border: 1px solid @accent2;
+#entry {
    border-radius: 10px;
+   margin: 4px;
+   padding: 5px;
 }
 
- #entry:selected #text {
-    color: @txt;
- }
+/* Selected Entry */
+#entry:selected {
+   background-color: @bg2;
+
  image {
    margin-left: 10px;
  }

@@ -141,34 +141,15 @@
 ; alacritty_sync = 0
 
 [color]
-
-# Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
-# Or defined by hex code '#xxxxxx' (hex code must be within ''). User defined colors requires
-# a terminal that can change color definitions such as Gnome-terminal or rxvt.
-# default is to keep current terminal color
-background = '#1d2021'
-foreground = '#DDD5C4'
-
-# SDL only support hex code colors, these are the default:
-; background = '#111111'
-; foreground = '#33cccc'
-
-
-# Gradient mode, only hex defined colors are supported,
-# background must also be defined in hex or remain commented out. 1 = on, 0 = off.
-# You can define as many as 8 different colors. They range from bottom to top of screen
+background = '#232136'
 gradient = 1
-gradient_count = 0
-gradient_color_1 = '#d3869b'
-gradient_color_2 = '#fb4934'
-gradient_color_3 = '#d65d0e'
-gradient_color_4 = '#fe8019'
-gradient_color_5 = '#d79921'
-gradient_color_6 = '#fabd2f'
-gradient_color_7 = '#b16286'
-gradient_color_8 = '#d3869b'
-
-
+gradient_count = 6
+gradient_color_1 = '#3e8fb0'
+gradient_color_2 = '#9ccfd8'
+gradient_color_3 = '#c4a7e7'
+gradient_color_4 = '#ea9a97'
+gradient_color_5 = '#f6c177'
+gradient_color_6 = '#eb6f92'
 
 [smoothing]
 

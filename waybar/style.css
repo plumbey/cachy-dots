@@ -1,3 +1,5 @@
+@import "rose-pine-moon.css";
+
 * {
     font-family: "Maple Mono";
 }
@@ -6,7 +8,7 @@ window#waybar {
     background: rgba(0, 0, 0, 0);
     font-size: 18px;
     font-weight: 700;
-    color: #ebdbb2;
+    color: @bg2;
 }
 
 /* Left-most: CPU */
@@ -21,48 +23,43 @@ window#waybar {
     margin-left: 6px;
     margin-right: 10px;
     border-radius: 10px;
-    border: 3px solid #1d2021;
-    box-shadow: #1d2021 2px 2px 4px;
+    border: 3px solid @bg;
+    box-shadow: @bg 2px 2px 4px;
 }
 
 #cpu {
-    background: #cc241d;
+    background: @accent1;
 }
 
 #memory {
-    background: #d65d0e;
+    background: @accent2;
 }
 
 #workspaces {
-    background: #458588;
-    color: #ebdbb2;
-}
-
-#workspaces button {
-    color: #ebdbb2;
+    background: @accent3;
 }
 
 #workspaces button.active {
-    background: #83a598;
+    background: rgba(224, 222, 244, 0.5);
 }
 
 
 /* Active window title */
 #window {
-    background: #b5346a; 
+    background: @accent4; 
 }
 
 /* Right-most: Clock */
 #clock {
-    background: #458588;
+    background: @accent3;
 }
 
 #tray {
-    background: #d65d0e;
+    background: @accent2;
 }
 
 #pulseaudio {
-    background: #cc241d;
+    background: @accent1;
     margin-right: 6px;
 }
 
