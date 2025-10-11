@@ -20,8 +20,8 @@ input {
 }
 
 cursor {
-    xcursor-theme "rose-pine"
-    xcursor-size 16
+    xcursor-theme "Bibata-Modern-Classic"
+    xcursor-size 24
 }
 
 // ────────────── Output Configuration ──────────────
@@ -147,7 +147,7 @@ binds {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
     spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
-    spawn-sh-at-startup "swaybg -i ~/Pictures/wallpapers/meadow.png" // Set wallpaper
+    spawn-sh-at-startup "swaybg -i ~/Pictures/wallpapers/mountain_lake.png" // Set wallpaper
     spawn-sh-at-startup "waybar" // Launch waybar
     spawn-sh-at-startup "wlsunset -l 36.9 -L -122.0" // Redshift clone
 

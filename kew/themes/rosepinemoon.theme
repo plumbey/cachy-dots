@@ -1,0 +1,60 @@
+# ============================================
+# 4. TOKYO NIGHT (Modern Dark)
+# ============================================
+
+[theme]
+name=Rose Pine Moon
+author=pumbey
+
+# Core colors
+accent=#eb6f92
+text=#e0def4
+textDim=#908caa
+textMuted=#6e6a86
+
+# General Colors
+logo=#6e6a86
+header=#6e6a86
+footer=#6e6a86
+help=#9ccfd8
+link=#3e8fb0
+nowplaying=#ea9a97
+
+# Playlist View
+playlist.rownum=#6e6a86
+playlist.title=#e0def4
+playlist.playing=#ea9a97
+
+# Track View
+trackview.title=#e0def4
+trackview.artist=#ea9a97
+trackview.album=#c4a7e7
+trackview.year=#c4a7e7
+trackview.time=#9ccfd8
+trackview.visualizer=#ea9a97
+trackview.lyrics=#e0def4
+
+# Library View
+library.artist=#ea9a97
+library.album=#c4a7e7
+library.track=#e0def4
+library.enqueued=#9ccfd8
+library.playing=#ea9a97
+
+# Search
+search.label=#c4a7e7
+search.query=#e0def4
+search.result=#e0def4
+search.enqueued=#9ccfd8
+search.playing=#ea9a97
+
+# Progress
+progress.filled=#ea9a97
+progress.empty=#292e42
+progress.elapsed=#9ccfd8
+
+# Status
+status.info=-1      	# Default foreground
+status.warning=#787878  # The old school gray, this works on most terminals
+status.error=#787878  	# The old school gray, this works on most terminals
+status.success=#787878  # The old school gray, this works on most terminals

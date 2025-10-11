@@ -8,7 +8,6 @@ window#waybar {
     background: rgba(0, 0, 0, 0);
     font-size: 18px;
     font-weight: 700;
-    color: @bg2;
 }
 
 /* Left-most: CPU */
@@ -23,44 +22,53 @@ window#waybar {
     margin-left: 6px;
     margin-right: 10px;
     border-radius: 10px;
-    border: 3px solid @bg;
     box-shadow: @bg 2px 2px 4px;
+    background: @bg;
 }
 
 #cpu {
-    background: @accent1;
+    color: @accent1;
+    border: 3px solid @accent1;
 }
 
 #memory {
-    background: @accent2;
+    color: @accent2;
+    border: 3px solid @accent2;
 }
 
 #workspaces {
-    background: @accent3;
+    border: 3px solid @accent3;
+}
+
+#workspaces button {
+    color: @subtle;
 }
 
 #workspaces button.active {
-    background: rgba(224, 222, 244, 0.5);
+    color: @accent3;
 }
-
 
 /* Active window title */
 #window {
-    background: @accent4; 
+    color: @accent4; 
+    border: 3px solid @accent4;
 }
 
 /* Right-most: Clock */
 #clock {
-    background: @accent3;
+    color: @accent3;
+    border: 3px solid @accent3;
 }
 
 #tray {
-    background: @accent2;
+    color: @accent2;
+    border: 3px solid @accent2;
 }
 
 #pulseaudio {
-    background: @accent1;
-    margin-right: 6px;
+    color: @accent1;
+    margin-right: 0px;
+    border: 3px solid @accent1;
 }
 
 /* Tooltips */
@@ -69,14 +77,4 @@ tooltip {
     background-color: #0f1117;
     color: #c0c0c0;
     padding: 4px 8px;
-}
-
-/* All system info modules */
-#backlight,
-#custom-notification {
-    background: rgba(40, 40, 40, 0);
-    font-weight: 800;
-    color: #c0c0c0;
-    border-radius: 0px;
-    padding: 4px 10px;
 }
