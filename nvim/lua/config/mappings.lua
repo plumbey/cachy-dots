@@ -31,7 +31,6 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 10
 
 -- Remaps
-vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>ex", vim.cmd.Ex)
 
 vim.keymap.set("x", "<leader>p", [["_dP]])
