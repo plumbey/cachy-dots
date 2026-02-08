@@ -1,68 +1,23 @@
-local telescope = require('telescope')
-
-telescope.setup
-{
-    pickers = {
-        previewer = true,
-    }
-}
-
-require("telescope").setup {
-  pickers = {
-    live_grep = {
+local no_preview = function()
+  return require('telescope.themes').get_dropdown({
+    borderchars = {
+      { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
+      prompt = {"─", "│", " ", "│", '┌', '┐', "│", "│"},
+      results = {"─", "│", "─", "│", "├", "┤", "┘", "└"},
+      preview = { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
     },
-
-    grep_string = {
-    },
-
-    find_files = {
-      previewer = true,
-    },
-
-    buffers = {
-      previewer = true,
-    },
-    planets = {
-      show_pluto = true,
-      show_moon = true,
-    },
-
-    colorscheme = {
-      enable_preview = true,
-    },
-
-    lsp_references = {
-      initial_mode = "normal",
-    },
-
-    lsp_definitions = {
-      initial_mode = "normal",
-    },
-
-    lsp_declarations = {
-      initial_mode = "normal",
-    },
-
-    lsp_implementations = {
-      initial_mode = "normal",
-    },
-  },
-  extensions = {
-    fzf = {
-      fuzzy = true, -- false will only do exact matching
-      override_generic_sorter = true, -- override the generic sorter
-      override_file_sorter = true, -- override the file sorter
-      case_mode = "smart_case", -- or "ignore_case" or "respect_case"
-    },
-  },
-}
+    width = 0.8,
+    previewer = false,
+    prompt_title = false
+  })
+end
 
 local builtin = require('telescope.builtin')
 
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>ff', function() builtin.find_files(no_preview()) end, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<C-p>', builtin.git_files, {})
-vim.keymap.set('n', '<leader>b', builtin.buffers, {})
+vim.keymap.set('n', '<C-p>', function() builtin.git_files(no_preview()) end, {})
+vim.keymap.set('n', '<leader>b', function() builtin.buffers(no_preview()) end, {})
 vim.keymap.set('n', '<leader>fp', function()
 	builtin.grep_string({search = vim.fn.input("Grep >") });
 end)

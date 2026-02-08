@@ -1,12 +1,12 @@
 @import "rose-pine-moon.css";
 
 * {
-    font-family: "Maple Mono Normal NF";
+    font-family: "Agave Nerd Font";
 }
 
 window#waybar {
     background: rgba(0, 0, 0, 0);
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
 }
 

@@ -6,7 +6,7 @@
 
 path=/home/emc/Music
 version=3.5.2
-allowNotifications=0
+allowNotifications=1
 hideLogo=0
 hideHelp=0
 lastVolume=45
@@ -49,7 +49,7 @@ theme=rosepinemoon.theme
 # 2 = Colors derived from TrueColor theme, 
 
 # Color Mode:
-colorMode=0
+colorMode=2
 
 # Terminal color theme is default.theme in 
 # ~/.config/kew/themes (on Linux/FreeBSD/Android), 

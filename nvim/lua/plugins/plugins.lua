@@ -1,15 +1,22 @@
 return {
     { 'ellisonleao/gruvbox.nvim', priority = 1000 , config = true, opts = ...},
     { "rose-pine/neovim", name = "rose-pine" },
-    {
-        'nvim-lualine/lualine.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' }
-    },
     { 'nvim-telescope/telescope.nvim', tag = '0.1.8',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    { 'nvim-telescope/telescope-file-browser.nvim' },
-    { 'nvim-treesitter/nvim-treesitter' },
+    {
+    'nvim-telescope/telescope.nvim', version = '*',
+    dependencies = {
+        'nvim-lua/plenary.nvim',
+        -- optional but recommended
+        { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+    },
+    },
+    {
+        'nvim-treesitter/nvim-treesitter',
+        lazy = false,
+        build = ':TSUpdate'
+    },  
     { 'brianhuster/live-preview.nvim',
         dependencies = {'nvim-telescope/telescope.nvim'},
     },
@@ -62,4 +69,12 @@ return {
       },
     },
     { 'm4xshen/autoclose.nvim', opts = {}, },
+    { 'folke/zen-mode.nvim' },
+    {
+        'lukas-reineke/indent-blankline.nvim',
+        main = 'ibl',
+        ---@module 'ibl'
+        ---@type ibl.config
+        opts = {},
+    }
 }

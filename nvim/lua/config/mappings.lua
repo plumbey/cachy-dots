@@ -10,8 +10,8 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.textwidth = 0
-vim.opt.wrapmargin = 0
+vim.opt.textwidth = 80
+vim.opt.wrapmargin = 80
 vim.opt.linebreak = true
 vim.opt.wrap = true
 vim.opt.columns = 80

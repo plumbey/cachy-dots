@@ -43,6 +43,7 @@
         },
         {
             "type": "wm",
+            "format": "{} (wayland)",
             "key": " ",
             "keyColor": "34", 
         },
